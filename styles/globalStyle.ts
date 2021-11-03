@@ -1,4 +1,5 @@
 import { createGlobalStyle, DefaultTheme } from "styled-components";
+import { FONT_SIZES } from "@/styles/index";
 
 const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   /* Shout out to Josh Comeau for his Awesome CSS reset */
@@ -18,7 +19,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol, dl, dt, dd {
   3. Allow percentage-based heights in the application
 */
 html, body {
-  height: 100%
+  height: 100%;
+  font-size: ${FONT_SIZES.htmlFontSize};
 }
 /*
   4. Improve the typography across the site.
